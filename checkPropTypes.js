@@ -8,9 +8,9 @@
 'use strict';
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = require('fbjs/lib/invariant');
-  var warning = require('fbjs/lib/warning');
-  var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+  var invariant = require('./fbjs/invariant.js');
+  var warning = require('./fbjs/warning.js');
+  var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret.js');
   var loggedTypeFailures = {};
 }
 

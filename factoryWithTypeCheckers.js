@@ -7,13 +7,13 @@
 
 'use strict';
 
-var emptyFunction = require('fbjs/lib/emptyFunction');
-var invariant = require('fbjs/lib/invariant');
-var warning = require('fbjs/lib/warning');
-var assign = require('object-assign');
+var emptyFunction = require('./fbjs/emptyFunction.js');
+var invariant = require('./fbjs/invariant.js');
+var warning = require('./fbjs/warning.js');
+var assign = Object.assign;
 
-var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
-var checkPropTypes = require('./checkPropTypes');
+var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret.js');
+var checkPropTypes = require('./checkPropTypes.js');
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */

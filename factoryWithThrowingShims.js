@@ -7,9 +7,9 @@
 
 'use strict';
 
-var emptyFunction = require('fbjs/lib/emptyFunction');
-var invariant = require('fbjs/lib/invariant');
-var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+var emptyFunction = require('./fbjs/emptyFunction.js');
+var invariant = require('./fbjs/invariant.js');
+var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret.js');
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
